@@ -1,0 +1,38 @@
+{
+  "name": "Configuracion",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "tasaFinanciamiento": {
+      "type": "number",
+      "required": true
+    },
+    "porcentajeEnganche": {
+      "type": "number",
+      "required": true
+    },
+    "plazoMaximo": {
+      "type": "number",
+      "required": true
+    },
+    "ultimoCliente": {
+      "type": "number",
+      "required": true
+    },
+    "ultimoArticulo": {
+      "type": "number",
+      "required": true
+    },
+    "ultimoFolio": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

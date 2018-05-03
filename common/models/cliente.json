@@ -1,0 +1,35 @@
+{
+  "name": "Cliente",
+  "plural": "Clientes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "clave": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellidoPaterno": {
+      "type": "string",
+      "required": true
+    },
+    "apellidoMaterno": {
+      "type": "string",
+      "required": true
+    },
+    "rfc": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

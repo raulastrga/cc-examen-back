@@ -1,0 +1,35 @@
+{
+  "name": "Venta",
+  "plural": "Ventas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idCliente": {
+      "type": "string",
+      "required": true
+    },
+    "folio": {
+      "type": "number",
+      "required": true
+    },
+    "nombreCliente": {
+      "type": "string",
+      "required": true
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Articulo",
+  "plural": "Articulos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "clave": {
+      "type": "number",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "modelo": {
+      "type": "string",
+      "required": true
+    },
+    "precio": {
+      "type": "number",
+      "required": true
+    },
+    "existencia": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
