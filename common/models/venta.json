@@ -7,12 +7,12 @@
     "validateUpsert": true
   },
   "properties": {
-    "idCliente": {
-      "type": "string",
-      "required": true
-    },
     "folio": {
       "type": "number",
+      "required": true
+    },
+    "claveCliente": {
+      "type": "string",
       "required": true
     },
     "nombreCliente": {
@@ -25,6 +25,26 @@
     },
     "fecha": {
       "type": "date",
+      "required": true
+    },
+    "plazo": {
+      "type": "number",
+      "required": true
+    },
+    "precioContado": {
+      "type": "number",
+      "required": true
+    },
+    "importeAbono": {
+      "type": "number",
+      "required": true
+    },
+    "importeAhorra": {
+      "type": "number",
+      "required": true
+    },
+    "estatus": {
+      "type": "number",
       "required": true
     }
   },

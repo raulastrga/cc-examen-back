@@ -1,33 +1,45 @@
 {
-  "name": "Configuracion",
-  "plural": "Configuraciones",
+  "name": "DetalleVenta",
+  "plural": "DetalleVentas",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "tasaFinanciamiento": {
+    "idVenta": {
+      "type": "string",
+      "required": true
+    },
+    "folioVenta": {
       "type": "number",
       "required": true
     },
-    "porcentajeEnganche": {
+    "idArticulo": {
+      "type": "string",
+      "required": true
+    },
+    "claveArticulo": {
       "type": "number",
       "required": true
     },
-    "plazoMaximo": {
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "modelo": {
+      "type": "string",
+      "required": true
+    },
+    "cantidad": {
       "type": "number",
       "required": true
     },
-    "ultimoCliente": {
+    "precio": {
       "type": "number",
       "required": true
     },
-    "ultimoArticulo": {
-      "type": "number",
-      "required": true
-    },
-    "ultimoFolio": {
+    "importe": {
       "type": "number",
       "required": true
     }

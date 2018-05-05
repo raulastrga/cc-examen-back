@@ -57,8 +57,8 @@
       "remoting": {
         "sharedMethods": {
           "*": false,
-          "create": true,
-          "find": true
+          "find": true,
+          "registrar": true
         }
       }
     }
@@ -70,8 +70,10 @@
       "remoting": {
         "sharedMethods": {
           "*": false,
-          "create": true,
-          "searchByName": true
+          "find": true,
+          "registrar": true,
+          "searchByName": true,
+          "editar": true
         }
       }
     }
@@ -83,8 +85,10 @@
       "remoting": {
         "sharedMethods": {
           "*": false,
-          "create": true,
-          "searchByName": true
+          "find": true,
+          "registrar": true,
+          "searchByName": true,
+          "editar": true
         }
       }
     }
@@ -96,11 +100,16 @@
       "remoting": {
         "sharedMethods": {
           "*": false,
-          "create": true,
           "find": true,
-          "getUltimoFolio": true
+          "getUltimaClaveCliente": true,
+          "getUltimaClaveArticulo": true,
+          "registrar": true
         }
       }
     }
+  },
+  "DetalleVenta": {
+    "dataSource": "accountDS",
+    "public": false
   }
 }
