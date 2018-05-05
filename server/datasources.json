@@ -6,9 +6,11 @@
   "accountDS": {
     "host": "ds263089.mlab.com",
     "port": 63089,
-    "url": "mongodb://localhost/examen-cc",
+    "url": "mongodb://root:vivalavida123@ds263089.mlab.com:63089/examen-cc",
     "database": "examen-cc",
+    "password": "vivalavida123",
     "name": "accountDS",
+    "user": "root",
     "connector": "mongodb"
   }
 }
