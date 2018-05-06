@@ -2,8 +2,10 @@
 
 module.exports = function(Configuracion) {
     Configuracion.getUltimaClaveCliente = function(cb) {
-        Configuracion.findOne(function(err, configuracion) { 
-            cb(null, configuracion.ultimoCliente);
+        Configuracion.findOne(function(err, configuracion) {
+            //Valida si el resultado es nulo (no existe configuración registrada)
+            var resultado = configuracion === null ? configuracion : configuracion.ultimoCliente
+            cb(null, resultado);
         });    
     };
       
@@ -19,7 +21,9 @@ module.exports = function(Configuracion) {
 
     Configuracion.getUltimaClaveArticulo = function(cb) {
         Configuracion.findOne(function(err, configuracion) { 
-            cb(null, configuracion.ultimoArticulo);
+            //Valida si el resultado es nulo (no existe configuración registrada)
+            var resultado = configuracion === null ? configuracion : configuracion.ultimoArticulo
+            cb(null, resultado);
         });    
     };
       
